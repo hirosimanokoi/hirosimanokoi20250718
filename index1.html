@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>広島の恋</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+ justify-content: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        header h1 {
+            margin: 0;
+        }
+.text {
+            width: 300px; /* 固定宽度 */
+            padding: 15px; /* 内边距，保证文字不贴边 */
+            font-size: 16px; /* 文字大小 */
+            color: #333; /* 文字颜色，使用深灰色 */
+            margin: 5px auto; /* 上下和左右的外边距，使文字框居中 */
+	text-align: center; 
+
+    /* 使父容器能够垂直居中内容 */
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+
+
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+.product2 {
+    background-color: white;
+    border-radius: 10px; /* 使用标准的 border-radius 属性 */
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px auto; /* 将外边距设置为 auto，水平居中 */
+    width: 280px;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    padding: 20px; /* 给商品卡片内部添加内边距，使内容不贴边 */
+}
+.product2 h3 {
+            font-size: 16px;
+            margin: 5px 0;
+	    font-weight: 400;
+        }
+.product2:hover {
+    transform: translateY(-10px); /* 悬停时抬起卡片 */
+}
+        .product {
+            background-color: white;
+            --border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+margin: 10px auto; /* 将外边距设置为 auto，水平居中 */
+            width: 280px;
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        .product-image {
+            width: 100%;
+            height: 360px;
+            overflow: hidden;
+            --background-color: #eee;
+display: flex; /* 使用 flex 布局 */
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+        }
+        .product-image img {
+            width: 100%;
+            height: auto;
+            object-fit: contain; /* 图片按比例填充容器 */
+        }
+        .product-info {
+            padding: 15px;
+            background-color: #fff;
+            text-align: center;
+        }
+        .product h2 {
+            font-size: 16px;
+            margin: 5px 0;
+	    font-weight: 400;
+        }
+        .product p {
+            font-size: 16px;
+            color: #777;
+            margin: 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* 响应式布局 */
+        @media (max-width: 768px) {
+            .product {
+                width: 100%; /* 在平板和手机上，每个商品占满屏幕 */
+                margin: 10px 0;
+            }
+            .container {
+                flex-direction: column; /* 一列显示商品 */
+                align-items: center;
+            }
+        }
+
+        /* 小屏幕手机上的样式 */
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 24px; /* 调整店名字体大小 */
+            }
+            .product h2 {
+                font-size: 18px; /* 调整商品名字体大小 */
+            }
+            .product p {
+                font-size: 14px; /* 调整商品描述的字体大小 */
+                margin: 0 10px 10px;
+            }
+        }
+
+        /* 商品卡片的悬停效果 */
+        .product:hover {
+            transform: translateY(-10px); /* 悬停时商品卡片稍微抬起 */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>モニター</h1>
+    </header>
+
+<!-- 商品1 -->
+        <div class="product">
+            <div class="product-image">
+                <img src="https://shop.r10s.jp/lovehiroshima/cabinet/11140213/imgrc0100999734.jpg" alt="USB メモリ">
+            </div>
+	</div>
+<div class="text">
+	<p>USB メモリ</p>
+</div>
+    	<!-- 商品4 -->
+        <div class="product">
+            <div class="product-image">
+                <img src="https://shop.r10s.jp/lovehiroshima/cabinet/12207440/15.jpg" alt="盗聴器 発見器">
+            </div>
+            
+        </div>
+<div class="text">
+	<p>聴器 発見器</p>
+</div>
+        <!-- 商品5 -->
+        <div class="product">
+            <div class="product-image">
+                <img src="https://image.rakuten.co.jp/lovehiroshima/cabinet/12203198/bla.jpg" alt="デジタルカメラ">
+            </div>
+            
+        </div>
+<div class="text">
+	<p>デジタルカメラ</p>
+</div>
+<div class="product2">
+	<h3>Q：申し込み方法は？<br>
+	     A：LINEで「商品名＋参加希望」と送信公式アカウントを追加、追加後、キャンペーンに参加
+	</h3>
+</div>
+<div class="product2">
+	<h3>Q：参加方法を教えてください<br>
+A：希望のキャンペーンに応募<br>
+→ 当選者のみLINE通知<br>
+→ 指定店舗（Amazon/楽天/Yahoo!）で商品購入<br><br>
+
+商品到着後、レビューを投稿 レビュー掲載確認後、全額返金<br><br>
+
+※ 商品返送不要・実質無料
+	</h3>
+</div>
+<div class="product2">
+	<h3> Q：返金方法は？<br>
+A.PayPay・PayPal・Amazonギフトコードで対応
+	</h3>
+</div>
+<div class="product2">
+	<h3>Q：返金時期は？<br>
+A：レビュー掲載後、3営業日以内に返金手続きを完了
+	</h3>
+</div>
+<div class="product2">
+	<h3>Q：費用はかかりますか？<br>
+A：全額返金のため完全無料でご参加いただけます
+	</h3>
+</div>
+<div class="product2">
+	<h3>Q：個人情報は安全ですか？<br>
+A：個人情報保護法に基づき厳重に管理し、第三者への開示は一切ございません
+	</h3>
+</div>
+<div class="product2">
+	<h3>Q：月に何回まで参加可能？<br>
+A：お一人様月1回・1商品まで
+	</h3>
+</div>
+<div class="product2">
+	<h3>Q：本当に無料ですか？<br>
+A：はい。商品代金は全額返金されます
+
+※ 3ヶ月以上連絡がない場合は対象外
+	</h3>
+</div>
+<div class="product2">
+	<h3>Q：なぜ無料で提供？<br>
+A：メーカー広告費で運営のため、ユーザー負担は一切ありません
+	</h3>
+</div>
+<br><br><br><br>
+    <footer>
+        <p>&copy; 広島の恋.2025</p>
+    </footer>
+</body>
+</html>
